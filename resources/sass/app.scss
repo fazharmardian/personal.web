@@ -1,0 +1,97 @@
+@import "bootstrap/scss/bootstrap";
+
+.about-image-container {
+    max-width: 100%;  /* Default for larger screens */
+}
+
+.about-image {
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    /* When screen is smaller than 768px */
+    .about-image-container {
+        max-width: 300px;  /* Limit image width */
+    }
+}
+
+@media (max-width: 576px) {
+    /* When screen is smaller than 576px */
+    .about-image-container {
+        max-width: 200px;  /* Further reduce image size */
+    }
+}
+
+.yellow-border {
+    width: 100%;
+    max-width: 350px; /* Default size for larger screens */
+}
+
+.inner-image-container {
+    width: 100%;
+    height: auto;
+}
+
+.profile-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image fills the container without distortion */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .yellow-border {
+        max-width: 300px; /* Resize the yellow border on smaller screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .yellow-border {
+        max-width: 200px; /* Further resize on extra small screens */
+    }
+}
+
+.scroll-animate-right {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: all 2s ease;
+}
+
+.scroll-animate-right.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.scroll-animate-left {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: all 2s ease;
+}
+
+.scroll-animate-left.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.scroll-animate-up {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 2s ease;
+}
+
+.scroll-animate-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.scroll-animate-down {
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: all 2s ease;
+}
+
+.scroll-animate-down.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
