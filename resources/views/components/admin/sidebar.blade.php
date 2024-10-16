@@ -28,21 +28,21 @@
 
     <!-- Nav Item - Charts -->
     <x-admin.sidelink :active="request()->is('admin/user')">
-        <a class="nav-link" href="{{ route('dashboard') }}">
-            <i class="fas fa-fw fa-tachometer-alt"></i>
+        <a class="nav-link" href="{{ route('user.index') }}">
+            <i class="fas fa-fw fa-user"></i>
             <span>Users</span></a>
     </x-admin.sidelink>
 
     <!-- Nav Item - Tables -->
     <x-admin.sidelink :active="request()->is('admin/project')">
         <a class="nav-link" href="{{ route('Aproject') }}">
-            <i class="fas fa-fw fa-table"></i>
+            <i class="fas fa-fw fa-tasks"></i>
             <span>Projects</span></a>
     </x-admin.sidelink>
 
     <li class="nav-item">
         <a class="nav-link" href="tables.html">
-            <i class="fas fa-fw fa-table"></i>
+            <i class="fas fa-fw fa-tools"></i>
             <span>Skill</span></a>
     </li>
 
